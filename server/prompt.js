@@ -11,7 +11,8 @@ Always search for:
 - Business model, products, and primary customers
 - Key competitors and market position
 - Recent news: M&A, funding rounds, leadership changes, product launches (last 12 months)
-- SEC filings on EDGAR
+- SEC filings on EDGAR (search for the company's 10-K, 10-Q, 8-K filings — always populate secFilings)
+- Always write a thesis and diligenceQuestions — these are required even if searches are limited
 - Analyst commentary and risk factors`;
 
 const MEMO_TOOL = {
@@ -122,7 +123,7 @@ const MEMO_TOOL = {
         items: { type: 'string' }
       }
     },
-    required: ['company', 'businessOverview', 'keyFinancials', 'competitors', 'keyRisks', 'thesis', 'diligenceQuestions']
+    required: ['company', 'businessOverview', 'keyFinancials', 'competitors', 'keyRisks', 'thesis', 'diligenceQuestions', 'sources', 'secFilings']
   }
 };
 

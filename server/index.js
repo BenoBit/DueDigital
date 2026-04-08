@@ -46,14 +46,14 @@ app.post('/api/screen', async (req, res) => {
   try {
     const message = await client.messages.create({
       model: 'claude-sonnet-4-6',
-      max_tokens: 4000,
+      max_tokens: 6000,
       system: [{ type: 'text', text: SYSTEM_PROMPT, cache_control: { type: 'ephemeral' } }],
       tools: [
         {
           type: 'web_search_20260209',
           name: 'web_search',
           allowed_callers: ['direct'],
-          max_uses: edgarData ? 3 : 5,
+          max_uses: edgarData ? 4 : 6,
         },
         { ...MEMO_TOOL, cache_control: { type: 'ephemeral' } },
       ],

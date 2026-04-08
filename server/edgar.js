@@ -29,6 +29,18 @@ function normalize(s) {
 async function resolveCik(company) {
   try {
     const entries = await getTickersMap();
+
+    // Try direct ticker match first (e.g. user typed "AAPL" or "aapl")
+    const tickerUpper = company.trim().toUpperCase();
+    const tickerMatch = entries.find(e => e.ticker === tickerUpper);
+    if (tickerMatch) {
+      return {
+        cik:    String(tickerMatch.cik_str).padStart(10, '0'),
+        ticker: tickerMatch.ticker,
+        name:   tickerMatch.title,
+      };
+    }
+
     const qNorm = normalize(company);
     const qWords = qNorm.split(' ').filter(Boolean);
     if (!qWords.length) return null;
