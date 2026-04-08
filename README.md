@@ -37,7 +37,7 @@ A full-stack company screening tool for investment analysis. Enter any company n
 **1. Clone and install dependencies**
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/due-digital.git
+git clone https://github.com/BenoBit/DueDigital.git
 cd due-digital
 npm install
 cd client && npm install && cd ..
