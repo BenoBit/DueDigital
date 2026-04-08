@@ -1,4 +1,4 @@
-# Due Digital
+# DueDigital
 
 A full-stack company screening tool for investment analysis. Enter any company name and get a structured memo in under a minute — pulling verified financials directly from SEC EDGAR for public companies, with AI-powered qualitative research for everything else.
 
