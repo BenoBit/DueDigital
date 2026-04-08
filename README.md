@@ -14,7 +14,7 @@ A full-stack company screening tool for investment analysis. Enter any company n
 
 - **SEC EDGAR integration** — for US-listed public companies, financial metrics (revenue, gross profit, operating income, net income, R&D, EPS) are pulled directly from XBRL filings. Each metric card links to the source filing on sec.gov.
 - **AI-powered research** — Claude (`claude-sonnet-4-6`) uses live web search to generate qualitative analysis: business overview, competitive positioning, recent strategic moves, key risks, and diligence questions.
-- **Private company support** — falls back to AI-estimated financials with source links when no SEC filings exist.
+- **Private company support** — falls back to AI-researched financials with source links when no SEC filings exist.
 - **Stock price chart** — live price, daily change, 52-week range, and interactive area chart with 1M/3M/6M/1Y range selector (Yahoo Finance).
 - **Export** — copy as Markdown, download `.md`, or generate a print-ready PDF memo.
 
